@@ -82,6 +82,7 @@ def start_webdriver():
 
 def main(args):
     start_webdriver()
+    print(args.username)
     login(args.username, args.password)
     change_plan(PREMIUM)
     sleep(args.sleep)
