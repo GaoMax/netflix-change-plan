@@ -51,12 +51,12 @@ def parse_arguments():
     required_arguments.add_argument(
         "-u",
         "--username",
-        required=True,
+        required=False,
         help="Your netflix email adress or phone number")
     required_arguments.add_argument(
         "-p",
         "--password",
-        required=True,
+        required=False,
         help="Your netflix password")
     args = parser.parse_args()
     return args
