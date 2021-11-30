@@ -76,7 +76,6 @@ def start_webdriver():
     chrome_prefs = {}
     chrome_options.experimental_options["prefs"] = chrome_prefs
     chrome_prefs["profile.default_content_settings"] = {"images": 2}
-    options.add_argument('--headless')
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(3)
 
