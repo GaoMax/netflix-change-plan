@@ -1,7 +1,7 @@
 FROM python:3.8
 ENV username=username
 ENV password=password
-WORKDIR /netflix-change-plan-master
+ADD netflix-change-plan.py /
 COPY ./requirements.txt ./
 RUN apt-get update && \
       apt-get -y install sudo
