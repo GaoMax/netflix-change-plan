@@ -87,7 +87,7 @@ def main(args):
     print(os.environ['username'])
     login(os.environ['username'], os.environ['password'])
     change_plan(PREMIUM)
-    sleep(args.sleep)
+    sleep(10)
     change_plan(BASIS)
     quit_and_exit()
 
