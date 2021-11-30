@@ -13,11 +13,6 @@ BASIS = 0
 STANDARD = 1
 PREMIUM = 2
 
-if __name__ == "__main__":
-    driver = webdriver.Chrome(options=chrome_options)
-    # Do stuff with your driver
-    driver.close()
-
 def change_plan(plan):
     driver.get("https://www.netflix.com/ChangePlan")
     try:
