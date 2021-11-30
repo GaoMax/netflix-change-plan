@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag maxspigot/netflix-change-plan
+      run: docker build . --file Dockerfile --tag maxspigot/netflix-change-plan:$(date +%s)
       
     - name: Docker Push
       run: docker push maxspigot/netflix-change-plan
