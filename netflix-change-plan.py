@@ -7,6 +7,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
+import os
+
 driver = None
 
 BASIS = 0
