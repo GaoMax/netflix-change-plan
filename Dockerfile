@@ -10,11 +10,11 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 # Install Chrome.
 RUN apt-get update && apt-get -y install google-chrome-stable
 
-RUN wget https://chromedriver.storage.googleapis.com/94.0.4606.41/chromedriver_linux64.zip
+RUN wget https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip
 RUN unzip chromedriver_linux64.zip
 RUN sudo chmod +x chromedriver
 RUN sudo mv chromedriver /usr/bin/
-RUN	rm chromedriver_linux64.zip
+RUN rm chromedriver_linux64.zip
 
 # Set display port as an environment variable
 ENV DISPLAY=:99
