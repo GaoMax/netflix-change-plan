@@ -21,5 +21,5 @@ RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "./netflix-change-plan.py", "-u", "${username}", "-p", "${password}"]
+CMD ["python", "./netflix-change-plan.py", "-u", ${username}, "-p", ${password}]
 
