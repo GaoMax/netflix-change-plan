@@ -1,6 +1,4 @@
 FROM python:3.8
-ENV username=username
-ENV password=password
 COPY . /app
 WORKDIR /app
 # install google chrome
@@ -21,5 +19,5 @@ RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "./netflix-change-plan.py", "-u", os.environ['username'], "-p", os.environ['password']]
+ENTRYPOINT ["python", "netflix-change-plan.py"]
 
